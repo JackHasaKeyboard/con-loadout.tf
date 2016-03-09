@@ -1,0 +1,79 @@
+#title loadout.tf
+
+- chars = ['a','b','c','d','e','f','g','h']
+
+#team
+	.btn.red.active red
+	.btn.blu blu
+
+#char
+	- chars.each do |char|
+		.btn.char= char
+
+#disp
+	= image_tag "soldier-alpha.png"
+#item
+	#item-attr
+		-#.head chieftan's challenge
+		= image_tag("chieftan's challenge.png");
+		%table{cellpadding: 0}
+			%tbody
+				%tr
+					%td
+						%div effect:
+						%input{type: "text", placeholder: "none"}
+						.arrow >
+				%tr
+					%td
+						%div paint:
+						%input{type: "text", placeholder: "none"}
+						.arrow >
+	-#%table.item{cellpading: 0}
+		%tbody
+			%tr
+				%td
+					.slot cosmetic
+			%tr
+				%td
+					.slot cosmetic
+			%tr
+				%td
+					.slot cosmetic
+
+	-#%table.item#wep{cellpadding: 0}
+		%tbody
+			%tr
+				%td
+					.slot cosmetic
+			%tr
+				%td
+					.slot cosmetic
+			%tr
+				%td
+					.slot cosmetic
+			%tr
+				%td
+					.slot action
+
+	#item-list
+		#head
+			.btn.tab#active
+				cosmetics
+			.btn.tab
+				weapons
+			.btn.tab
+				taunts
+			#search
+				%input{type: "text", placeholder: "chief"}
+		#bin
+			.tn
+				= image_tag("chieftan's challenge.png")
+				-#.name chieftan's challenge
+				-#.check √
+			.tn
+				= image_tag("the big chief.png")
+				-#.name the big chief
+			.tn
+				= image_tag("the chief constable.png")
+				-#.name the chief constable
+			.tn

@@ -13,3 +13,263 @@
  *= require_tree .
  *= require_self
  */
+
+/* $bg: #252525;
+$bg-item: #2A2725; */
+
+$bg: #2a2725;
+$bg-item: #3C352E;
+
+$red: #ba3435;
+$blu: #527C9A;
+$orange: #C94F39;
+$tan:  #f5e7de;
+
+body {
+	margin: 0;
+	background: $bg;
+	* {
+		margin: 6px;
+		font-family: tf2build;
+		color: #fff;
+	}
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#title {
+	padding: 10px;
+	text-align: center;
+}
+
+.btn {
+	background: $bg-item;
+	display: inline-block;
+	padding: 16px;
+	border-radius: 6px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.char:hover {
+	background: #ba3435
+}
+
+#char {
+	padding: 6px;
+	width: 128px;
+	display: inline-block;
+	.btn {
+		float: left;
+	}
+	.btn:nth-child(1) {
+		background: $orange;
+	}
+}
+
+#footer {
+	padding: 10px;
+	display: block;
+}
+
+.char {
+	width: 16px;
+}
+
+#team {
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	div {
+		margin: 0;
+		float: left;
+		border-radius: 0;
+	}
+	.red {
+		border-radius: 6px 0 0 6px;
+	}
+	.blu {
+		border-radius: 0 6px 6px 0;
+	}
+	.red.active {
+		background: $red;
+	}
+	.blu.active {
+		background: $blu;
+	}
+}
+
+#disp {
+	width: calc(100% - 192px);
+	padding: 16px;
+	top: 20px;
+	margin-left: 160px;
+	height: calc(100% - 60px);
+}
+
+.slot {
+	background: $bg-item;
+	color: #756B5E;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	padding: 26px;
+	border-radius: 6px;
+}
+
+.item {
+	display: inline-block;
+}
+
+#wep {
+	float: right;
+}
+
+#item {
+	display: inline-block;
+	width: 450px;
+	padding: 10px;
+	top: 42px;
+	float: right;
+	margin-top: -396px;
+	#item-list {
+		float: right;
+		.tab {
+			background: $bg-item;
+			display: inline-block;
+			border-radius: 6px 6px 0 0;
+			margin: 0;
+		}
+		#head, #search, #bin {
+			margin: 0;
+		}
+		#search {
+			background: $bg-item;
+			input {
+				width: calc(100% - 16px);
+				margin: 0;
+				padding: 6px;
+			}
+		}
+		#bin {
+			background: $bg-item;
+			border-radius: 0 0px 6px 6px;
+			display: inline-block;
+			padding: 10px;
+			width: 400px;
+			.tn {
+				margin: 0;
+				padding: 5px;
+				float: left;
+				.name {
+					width: 80px;
+					text-align: center;
+					margin-left: 5px;
+					font-size: 10px;
+					position: absolute;
+					margin-top: 80px;
+				}
+				img {
+					height: 60px;
+					border-radius: 6px;
+					padding: 10px;
+					float: left;
+					background: $bg;
+					margin: 5px;
+				}
+				img.active {
+					border: 4px solid $orange;
+				}
+			}
+		}
+	}
+
+	.btn:hover {
+		background: $orange;
+	}
+
+	#active {
+		background: $orange;
+	}
+
+	.check {
+		display: inline-block;
+		background: $orange;
+		padding: 6px;
+		width: 10px;
+		text-align: center;
+		font-size: 6px;
+		border-radius: 6px;
+		font-weight: bold;
+		position: absolute;
+		margin-top: 74px;
+		margin-left: -16px;
+	}
+
+	#item-attr {
+		background: $bg-item;
+		border-radius: 6px;
+		float: right;
+		padding: 6px;
+		margin-bottom: 32px;
+		img {
+			height: 100px;
+			margin-left: 13px;
+			margin-top: 13px;
+			background: $bg;
+			border-radius: 6px;
+		}
+		table {
+			float: right;
+			border-radius: 6px;
+			display: inline-block;
+			padding: 6px;
+			margin-top: 4px;
+			margin-right: 4px;
+			td {
+				padding: 10px;
+				* {
+					float: left;
+				}
+				input {
+					display: inline-block;
+					margin-top: 0px;
+					padding: 6px;
+				}
+				.arrow {
+					background: $orange;
+					display: inline-block;
+					text-align: center;
+					padding: 8px;
+					position: absolute;
+					margin-left: -32px;
+					margin-top: 0px;
+					width: 10px;
+					font-size: 10px;
+					-ms-transform: rotate(90deg);
+					-webkit-transform: rotate(90deg);
+					transform: rotate(90deg);
+				}
+			}
+		}
+		.head {
+			padding: 6px;
+		}
+	}
+}
+
+#disp {
+	img {
+		margin: 22px;
+		padding: 16px;
+		display: inline-block;
+		margin-top: -358px;
+		float: left;
+		/* background: $bg-item;
+		border-radius: 6px; */
+	}
+}
