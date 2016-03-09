@@ -1,0 +1,211 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 25, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+body {
+  margin: 0;
+  background: #252525;
+}
+/* line 28, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+body * {
+  margin: 6px;
+  font-family: tf2build;
+  color: #fff;
+}
+
+/* line 35, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 40, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#title {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 45, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+.btn {
+  background: #3C362F;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 58, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+.char:hover {
+  background: #ba3435;
+}
+
+/* line 62, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#char {
+  padding: 6px;
+  width: 128px;
+  display: inline-block;
+}
+/* line 66, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#char .btn {
+  float: left;
+}
+/* line 69, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#char .btn:nth-child(1) {
+  background: #ba3435;
+}
+
+/* line 74, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#footer {
+  padding: 10px;
+  display: block;
+}
+
+/* line 79, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+.char {
+  width: 16px;
+}
+
+/* line 83, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#team {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+/* line 87, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#team div {
+  margin: 0;
+  float: left;
+  border-radius: 0;
+}
+/* line 92, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#team .red {
+  border-radius: 6px 0 0 6px;
+}
+/* line 95, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#team .blu {
+  border-radius: 0 6px 6px 0;
+}
+/* line 98, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#team .red.active {
+  background: #ba3435;
+}
+/* line 101, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#team .blu.active {
+  background: #527C9A;
+}
+
+/* line 106, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#disp {
+  width: calc(100% - 192px);
+  padding: 16px;
+  position: absolute;
+  top: 20px;
+  margin-left: 160px;
+  height: calc(100% - 60px);
+}
+
+/* line 115, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+.slot {
+  background: #3C362F;
+  color: #756B5E;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 26px;
+  border-radius: 6px;
+}
+
+/* line 125, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+.item {
+  display: inline-block;
+}
+
+/* line 129, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#wep {
+  float: right;
+}
+
+/* line 133, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list {
+  display: block;
+  padding: 16px;
+}
+/* line 136, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #head {
+  display: inline-block;
+}
+/* line 139, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list .tab {
+  background: #3C362F;
+  display: inline-block;
+  border-radius: 6px 6px 0 0;
+  margin: 0;
+}
+/* line 145, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #head, #item-list #search, #item-list #bin {
+  margin: 0;
+}
+/* line 148, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #search {
+  display: block;
+}
+/* line 151, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #search {
+  background: #3C362F;
+}
+/* line 153, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #search input {
+  display: block;
+  width: calc(100% - 16px);
+  margin: 0;
+  padding: 6px;
+}
+/* line 160, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #bin, #item-list .tab {
+  padding: 16px;
+}
+/* line 163, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #bin {
+  background: #3C362F;
+  border-radius: 0 6px 6px 6px;
+  display: inline-block;
+  width: calc(100% - 32px);
+}
+/* line 168, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #bin .tn {
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+  float: left;
+}
+/* line 173, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #bin .tn .name {
+  width: 100px;
+  text-align: center;
+  font-size: 10px;
+  position: absolute;
+  margin-top: 106px;
+}
+/* line 180, /Users/Jack/RoR/CaD/loadout-tf/app/assets/stylesheets/application.scss */
+#item-list #bin .tn img {
+  height: 60px;
+  border-radius: 6px;
+  padding: 10px;
+  float: left;
+  background: #252525;
+  margin: 16px;
+}
