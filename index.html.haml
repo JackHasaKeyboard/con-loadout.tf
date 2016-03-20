@@ -1,0 +1,87 @@
+!!!
+%html
+    %head
+        %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+        %link{:href => "css/screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+        %title
+    %body
+
+    #title loadout.tf
+
+    #team
+        .btn.red.active red
+        .btn.blu blu
+
+    #char
+        - chars = ['a','b','c','d','e','f','g','h']
+
+        - chars.each do |char|
+            .btn.char= char
+
+    #disp
+        %img{src: "img/soldier-alpha.png"}
+    #item
+        #item-attr
+            .head chieftan's challenge
+            %img{src: "img/chieftan's challenge.png"}
+            %table{cellpadding: 0}
+                %tbody
+                    %tr
+                        %td
+                            %div effect:
+                            %input{type: "text", placeholder: "none"}
+                            .arrow >
+                    %tr
+                        %td
+                            %div paint:
+                            %input{type: "text", placeholder: "none"}
+                            .arrow >
+        -#%table.item{cellpading: 0}
+            %tbody
+                %tr
+                    %td
+                        .slot cosmetic
+                %tr
+                    %td
+                        .slot cosmetic
+                %tr
+                    %td
+                        .slot cosmetic
+
+        -#%table.item#wep{cellpadding: 0}
+            %tbody
+                %tr
+                    %td
+                        .slot cosmetic
+                %tr
+                    %td
+                        .slot cosmetic
+                %tr
+                    %td
+                        .slot cosmetic
+                %tr
+                    %td
+                        .slot action
+
+        #item-list
+            #head
+                .btn.tab#active
+                    cosmetics
+                .btn.tab
+                    weapons
+                .btn.tab
+                    animations
+                #search
+                    %input{type: "text", placeholder: "chief"}
+            #bin
+                .tn
+                    %img{src: "img/chieftan's challenge.png"}
+                    -#.name chieftan's challenge
+                    -#.check √
+                .tn
+                    %img{src: "img/the big chief.png"}
+                    -#.name the big chief
+                .tn
+                    %img{src: "img/the chief constable.png"}
+                    -#.name the chief constable
+                .tn

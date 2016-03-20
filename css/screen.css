@@ -1,0 +1,435 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* $bg: #252525;
+$bg-item: #2A2725; */
+body {
+  margin: 0;
+  background: #2a2725; }
+  body * {
+    margin: 6px;
+    font-family: tf2build;
+    color: #fff; }
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse; }
+
+#title {
+  padding: 10px;
+  text-align: center; }
+
+.btn {
+  background: #3C352E;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer; }
+
+.char:hover {
+  background: #ba3435; }
+
+#char {
+  padding: 6px;
+  width: 128px;
+  display: inline-block; }
+  #char .btn {
+    float: left; }
+  #char .btn:nth-child(1) {
+    background: #C94F39; }
+
+#footer {
+  padding: 10px;
+  display: block; }
+
+.char {
+  width: 16px; }
+
+#team {
+  display: inline-block;
+  width: 100%;
+  padding: 10px; }
+  #team div {
+    margin: 0;
+    float: left;
+    border-radius: 0; }
+  #team .red {
+    border-radius: 6px 0 0 6px; }
+  #team .blu {
+    border-radius: 0 6px 6px 0; }
+  #team .red.active {
+    background: #ba3435; }
+  #team .blu.active {
+    background: #527C9A; }
+
+#disp {
+  width: calc(100% - 192px);
+  padding: 16px;
+  top: 20px;
+  margin-left: 160px;
+  height: calc(100% - 60px); }
+
+.slot {
+  background: #3C352E;
+  color: #756B5E;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 26px;
+  border-radius: 6px; }
+
+.item {
+  display: inline-block; }
+
+#wep {
+  float: right; }
+
+#item {
+  display: inline-block;
+  width: 450px;
+  padding: 10px;
+  top: 42px;
+  float: right;
+  margin-top: -396px; }
+  #item #item-list {
+    float: right; }
+    #item #item-list .tab {
+      background: #3C352E;
+      display: inline-block;
+      border-radius: 6px 6px 0 0;
+      margin: 0; }
+    #item #item-list #head, #item #item-list #search, #item #item-list #bin {
+      margin: 0; }
+    #item #item-list #search {
+      background: #3C352E; }
+      #item #item-list #search input {
+        width: calc(100% - 16px);
+        margin: 0;
+        padding: 6px; }
+    #item #item-list #bin {
+      background: #3C352E;
+      border-radius: 0 0px 6px 6px;
+      display: inline-block;
+      padding: 10px;
+      width: 400px; }
+      #item #item-list #bin .tn {
+        margin: 0;
+        padding: 5px;
+        float: left; }
+        #item #item-list #bin .tn .name {
+          width: 80px;
+          text-align: center;
+          margin-left: 5px;
+          font-size: 10px;
+          position: absolute;
+          margin-top: 80px; }
+        #item #item-list #bin .tn img {
+          height: 60px;
+          border-radius: 6px;
+          padding: 10px;
+          float: left;
+          background: #2a2725;
+          margin: 5px; }
+        #item #item-list #bin .tn img.active {
+          border: 4px solid #C94F39; }
+  #item .btn:hover {
+    background: #C94F39; }
+  #item #active {
+    background: #C94F39; }
+  #item .check {
+    display: inline-block;
+    background: #C94F39;
+    padding: 6px;
+    width: 10px;
+    text-align: center;
+    font-size: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 74px;
+    margin-left: -16px; }
+  #item #item-attr {
+    background: #3C352E;
+    border-radius: 6px;
+    float: right;
+    padding: 6px;
+    margin-bottom: 32px; }
+    #item #item-attr img {
+      height: 100px;
+      margin-left: 13px;
+      margin-top: 13px;
+      background: #2a2725;
+      border-radius: 6px; }
+    #item #item-attr table {
+      float: right;
+      border-radius: 6px;
+      display: inline-block;
+      padding: 6px;
+      margin-top: 4px;
+      margin-right: 4px; }
+      #item #item-attr table td {
+        padding: 10px; }
+        #item #item-attr table td * {
+          float: left; }
+        #item #item-attr table td input {
+          display: inline-block;
+          margin-top: 0px;
+          padding: 6px; }
+        #item #item-attr table td .arrow {
+          background: #C94F39;
+          display: inline-block;
+          text-align: center;
+          padding: 8px;
+          position: absolute;
+          margin-left: -32px;
+          margin-top: 0px;
+          width: 10px;
+          font-size: 10px;
+          -ms-transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+    #item #item-attr .head {
+      padding: 6px; }
+
+#disp img {
+  margin: 22px;
+  padding: 16px;
+  display: inline-block;
+  margin-top: -358px;
+  float: left;
+  /* background: $bg-item;
+  border-radius: 6px; */ }
+
+/* home */
+.btn {
+  background: #3C352E;
+  display: inline-block;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer; }
+
+.char:hover {
+  background: #ba3435; }
+
+#char {
+  padding: 6px;
+  width: 128px;
+  display: inline-block; }
+  #char .btn {
+    float: left; }
+  #char .btn:nth-child(1) {
+    background: #C94F39; }
+
+#footer {
+  padding: 10px;
+  display: block; }
+
+.char {
+  width: 16px; }
+
+#team {
+  display: inline-block;
+  width: 100%;
+  padding: 10px; }
+  #team div {
+    margin: 0;
+    float: left;
+    border-radius: 0; }
+  #team .red {
+    border-radius: 6px 0 0 6px; }
+  #team .blu {
+    border-radius: 0 6px 6px 0; }
+  #team .red.active {
+    background: #ba3435; }
+  #team .blu.active {
+    background: #527C9A; }
+
+#disp {
+  width: calc(100% - 192px);
+  padding: 16px;
+  top: 20px;
+  margin-left: 160px;
+  height: calc(100% - 60px); }
+
+.slot {
+  background: #3C352E;
+  color: #756B5E;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  padding: 26px;
+  border-radius: 6px; }
+
+.item {
+  display: inline-block; }
+
+#wep {
+  float: right; }
+
+#item {
+  display: inline-block;
+  width: 450px;
+  padding: 10px;
+  top: 42px;
+  float: right;
+  margin-top: -396px; }
+  #item #item-list {
+    float: right; }
+    #item #item-list .tab {
+      background: #3C352E;
+      display: inline-block;
+      border-radius: 6px 6px 0 0;
+      margin: 0; }
+    #item #item-list #head, #item #item-list #search, #item #item-list #bin {
+      margin: 0; }
+    #item #item-list #search {
+      background: #3C352E; }
+      #item #item-list #search input {
+        width: calc(100% - 16px);
+        margin: 0;
+        padding: 6px; }
+    #item #item-list #bin {
+      background: #3C352E;
+      border-radius: 0 0px 6px 6px;
+      display: inline-block;
+      padding: 10px;
+      width: 400px; }
+      #item #item-list #bin .tn {
+        margin: 0;
+        padding: 5px;
+        float: left; }
+        #item #item-list #bin .tn .name {
+          width: 80px;
+          text-align: center;
+          margin-left: 5px;
+          font-size: 10px;
+          position: absolute;
+          margin-top: 80px; }
+        #item #item-list #bin .tn img {
+          height: 60px;
+          border-radius: 6px;
+          padding: 10px;
+          float: left;
+          background: #2a2725;
+          margin: 5px; }
+        #item #item-list #bin .tn img.active {
+          border: 4px solid #C94F39; }
+  #item .btn:hover {
+    background: #C94F39; }
+  #item #active {
+    background: #C94F39; }
+  #item .check {
+    display: inline-block;
+    background: #C94F39;
+    padding: 6px;
+    width: 10px;
+    text-align: center;
+    font-size: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 74px;
+    margin-left: -16px; }
+  #item #item-attr {
+    background: #3C352E;
+    border-radius: 6px;
+    float: right;
+    padding: 6px;
+    margin-bottom: 32px; }
+    #item #item-attr img {
+      height: 100px;
+      margin-left: 13px;
+      margin-top: 13px;
+      background: #2a2725;
+      border-radius: 6px; }
+    #item #item-attr table {
+      float: right;
+      border-radius: 6px;
+      display: inline-block;
+      padding: 6px;
+      margin-top: 4px;
+      margin-right: 4px; }
+      #item #item-attr table td {
+        padding: 10px; }
+        #item #item-attr table td * {
+          float: left; }
+        #item #item-attr table td input {
+          display: inline-block;
+          margin-top: 0px;
+          padding: 6px; }
+        #item #item-attr table td .arrow {
+          background: #C94F39;
+          display: inline-block;
+          text-align: center;
+          padding: 8px;
+          position: absolute;
+          margin-left: -32px;
+          margin-top: 0px;
+          width: 10px;
+          font-size: 10px;
+          -ms-transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+    #item #item-attr .head {
+      padding: 6px; }
+
+#disp img {
+  margin: 22px;
+  padding: 16px;
+  display: inline-block;
+  margin-top: -358px;
+  float: left;
+  /* background: $bg-item;
+  border-radius: 6px; */ }
